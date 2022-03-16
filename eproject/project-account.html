@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bag Bag Offical</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.buoi1/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style/project-account.css">
+    <script src="https://kit.fontawesome.com/38fa89d31e.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container-fluid col-md-12 col-lg-12 col-sm-12">
+        <!-- header -->
+        <div class="row" style="height: 76px;">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <div class="header">
+                    <div class="row">
+                        <!-- header include menu and option -->
+                        <span class="col-md-1 col-lg-1 col-sm-1" style="padding: 0%; width: 10%;">
+                            <input type="checkbox" id="show-search" style="display: none;">
+                            <form class="search-box" action="project-product-list.html">
+                            <input type="text" placeholder="What are you looking for....">
+                            <button type="submit" class="go-icon"><i class="fa-solid fa-arrow-right-long"></i></button>
+                            </form>
+                        </span>
+                        <span class="col-md-10 col-lg-10 col-sm-10" style="padding: 0%;width: 80%;">
+                            <div class="logo">
+                                <div class="logo--image">
+                                    <a href="index.html"><img src="image/logo/logo.png"></a>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="col-md-1 col-lg-1 col-sm-1" style="padding: 0%; width: 10%; line-height: 50px; height: 50px;">
+                            <span class="header__option">
+                                <span class="header__search">
+                                    <label for="show-search"  class="header__search--icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+                                </span>
+                                <span class="header__user">
+                                    <button class="header__user--icon"><a href="project-account.html"><i class="fa-solid fa-user"></i></a></button>
+                                </span>
+                                <span class="header__cart">
+                                    <button class="header__cart--icon"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <!-- end header include menu and option -->
+                        <!-- header navbar menu -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="header__navmenu">
+                                <nav class="header__navmenu--list">
+                                    <a href="index.html" class="header__navmenu--option"><strong>NEW ARRIVAL</strong></a>
+                                    <div class="dropdown">
+                                        <button class="header__navmenu--option"><strong>BRANDS</strong></button>
+                                        <div class="dropdown__list">
+                                            <a href="list-product.html/chloe-list.html"><strong>CHLOÉ</strong></a>
+                                            <a href="list-product.html/coach-list.html"><strong>COACH</strong></a>
+                                            <a href="list-product.html/dior-list.html"><strong>DIOR</strong></a>
+                                            <a href="list-product.html/louis_vuitton-list.html"><strong>LOUIS VUITTON</strong></a>
+                                            <a href="#"><strong>DISCOVER MORE...</strong></a>
+                                        </div>
+                                    </div>
+                                    <a href="list-product.html/man.html" class="header__navmenu--option"><strong>MAN</strong></a>
+                                    <a href="list-product.html/woman.html" class="header__navmenu--option"><strong>WOMAN</strong></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end header navbar menu -->
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- body: include log in and sign up site -->
+        <div class="row">
+            <div class="body__header">
+                <span class="body__header-back">
+                    <a href="index.html"><i class="fa-solid fa-arrow-left"></i>&ensp;Back to shopping</a>
+                </span>
+            </div>
+        </div>
+            <div class="row" style="height: 700px;">
+                <!-- log in -->
+                <div class="col-md-6 col-lg-6 col-sm-6" style="border-right: 1px groove;">
+                    <div class="body__log-in">
+                        <div class="body__log-in--site">
+                            <div class="body__log-in--first-words">
+                                <h2><strong>Already registered ?</strong></h2>
+                                <h6>If you already have an account, please enter your email and password to log in.</h6>
+                            </div>
+                            <div class="body__log-in--box">
+                                <form action="index.html">
+                                    <label for="email"><strong>Email:</strong></label><br>
+                                    <input type="email" id="email" name="email" placeholder="Your email..." required><br><br>
+                                    <label for="pwd"><strong>Password:</strong></label><br>
+                                    <input type="password" id="pwd" name="pwd" placeholder="Your password..." minlength="6" required><br><br>
+                                    <div class="login-option">
+                                        <button class="login" type="submit" id="login">Log In</button>
+                                        <span class="forgot"><a href="project-forgot-password.html">Forgot your password ?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end log in -->
+                <!-- sign up -->
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                    <div class="body__sign-up">
+                        <div class="body__sign-up--site">
+                            <div class="body__sign-up--first-words">
+                                <h2><strong>Don't have an account yet ? Sign up now.</strong></h2>
+                                <h6>Sign up to keep update our new stuff and sale.</h6>
+                            </div>
+                            <div class="body__sign-up--box">
+                                <form action="index.html">
+                                    <label for="name"><strong>Name:</strong></label><br>
+                                    <input type="text" id="name" name="name" placeholder="Your name..." required><br><br>
+                                    <label for="email"><strong>Email:</strong></label><br>
+                                    <input type="email" id="email1" name="email" placeholder="Your email..." required><br><br>
+                                    <label for="pwd"><strong>Password:</strong></label><br>
+                                    <input type="password" id="pwd1" name="pwd" placeholder="Your password..." minlength="6" required><br><br>
+                                    <label for="pwd"><strong>Re-enter your password:</strong></label><br>
+                                    <input type="password" id="repwd" name="repwd" placeholder="Your password..." minlength="6" required><br><br>
+                                    <strong>Gender:</strong><br>
+                                    <div class="gender">
+                                    <span><input type="radio" id="man" name="fav_language" value="HTML">
+                                    <label for="man">Man</label></span>
+                                    <span><input type="radio" id="woman" name="fav_language" value="CSS">
+                                    <label for="woman">Woman</label></span>
+                                    <span><input type="radio" id="other" name="fav_language" value="JavaScript">
+                                    <label for="other">Other</label></span>
+                                    </div><br>
+                                    <div class="signup-option">
+                                        <button class="signup" type="submit">Sign Up</button>
+                                        <span class="need-help"><a href="">Need some help ?</a></span>
+                                    </div><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end sign up    -->
+            </div>
+            <!-- end body -->
+
+            <!-- footer -->
+		<div class="row">
+			<div class="footer rounded">
+				<div class="row">
+					<!-- infor -->
+					<div class="col-md-4 col-lg-4 col-sm-4">
+						<div class="footer__infor">
+							<p><strong>INFORMATIONS</strong></p>
+							<ul>
+								<li>
+									<a href="">About us</a>
+								</li>
+								<li>
+									<a href="">Recruitment</a>
+								</li>
+								<li>
+									<a href="">Shipping</a>
+								</li>
+								<li>
+									<a href="">Stores</a>
+								</li>
+								<li>
+									<a href="">Payment</a>
+								</li>
+								<li>
+									<a href="">Return policy</a>
+								</li>
+								<li>
+									<a href="">Warranty policy</a>
+								</li>
+								<li>
+									<a href="">Terms of service</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- end of infor -->
+					<!-- store -->
+					<div class="col-md-4 col-lg-4 col-sm-4">
+						<div class="footer__store">
+							<p class="store"><strong>STORES</strong></p>
+							<ul>
+								<li>
+									<p><strong>Store 1</strong><br>
+										<a href="">284 Pasteur, Quận 3, HCM</a>
+									</p>
+								</li>
+								<li>
+									<p><strong>Store 2</strong><br>
+										<a href="">244 Trần Hưng Đạo, Quận 1, HCM</a>
+									</p>
+								</li>
+								<li>
+									<p><strong>Store 3</strong><br>
+										<a href="">513 Âu Cơ, Quận Tân Phú, HCM</a>
+									</p>
+								</li>
+								<li>
+									<p><strong>Store 4</strong><br>
+										<a href="">8 Trần Quốc Toản, Hoàn Kiếm, Hà Nội </a>
+									</p>
+								</li>
+								<li>
+									<p><strong>Store 5</strong><br>
+										<a href="">198 Tôn Đức Thắng, Đống Đa, Hà Nội</a>
+									</p>
+								</li>
+							</ul>
+							<p class="contactus"><strong>Openning time: 08:00 - 21:00</strong></p>
+						</div>
+					</div>
+					<!-- end of store -->
+					<!-- contact -->
+					<div class="col-md-4 col-lg-4 col-sm-4">
+						<div class="footer__contact">
+							<p><strong>CONTACT US</strong></p>
+							<p>Hotline:</p>
+							<p>Email: <a href="">contact@aptech.com</a></p>
+						</div>
+					</div>
+					<!-- end of contact -->
+				</div>
+			</div>
+		</div>
+		<!-- end of footer -->
+    </div>
+
+<script type="text/javascript" src="bootstrap.buoi1/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="font/js/all.js"></script>
+<script type="text/javascript" src="js/account.js"></script>
+</body>
+</html>

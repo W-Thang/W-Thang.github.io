@@ -1,0 +1,18 @@
+/* PC */
+@media ( min-width: 64em ){
+
+}
+
+
+
+/* Tablet */
+@media ( min-width: 46.25em ) and ( max-width: 63.9375em ){
+    .card__product .card__infor {
+        width: 120px;
+    }
+}
+
+/* Mobile */
+@media ( max-width: 46.1875em ){
+    
+}

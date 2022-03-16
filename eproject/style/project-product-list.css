@@ -1,0 +1,281 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: garamond;
+
+}
+/* css header */
+.header{
+	background-color: white;
+	width: 100%;
+	position: fixed;
+}
+.logo--image{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.logo--image a{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 205.23px;
+}
+.header__option{
+	display: inline-block;
+	position: absolute;
+}
+.header__search{
+	max-height: 100%;
+	width: 26px;
+	text-align: center;
+}
+.search-box{
+	position: absolute;
+	height: 50px;
+	line-height: 50px;
+	width: 93%;
+	margin-left: 1%;
+	font-size: 17px;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+.search-box input{
+	width: 95%;
+	border: none;
+}
+.search-box input::placeholder{
+	color: black;
+	font-style: inherit;
+}
+.search-box .go-icon{
+	width: 30px;
+	height: 46px;
+	border: none;
+	background-color: white;
+	position: absolute;
+	top: 1px;
+	transform: translateY(1%);
+	outline: none;
+	cursor: pointer;
+}
+#show-search:checked ~ .search-box{
+	opacity: 1;
+	pointer-events: auto;
+}
+.header__search--icon{
+	border: 0px;
+	background-color: white;
+	width: 26px;
+	position: absolute;
+	cursor: pointer;
+	text-align: center;
+	margin-left: 5px;
+	max-height: 50px;
+}
+.header__user{
+	max-height: 100%;
+	width: 100%;
+	border: 0px;
+	background-color: white;
+}
+.header__user--icon{
+	border: 0px;
+	background-color: white;
+	width: 26px;
+	margin-left: 38px;
+	position: absolute;
+	max-height: 50px;
+
+}
+.header__cart{
+	max-height: 100%;
+	width: 100%;
+	border: 0px;
+	background-color: white;
+}
+.header__cart--icon{
+	border: 0px;
+	background-color: white;
+	width: 26px;
+	margin-left: 72px;
+	position: absolute;
+	max-height: 50px;
+
+}
+.header__navmenu{
+	border: 1px solid;
+	border-width: 1px 0;
+	text-align: center;
+}
+.header__navmenu a{
+	text-decoration: none;
+	color: black;
+}
+.header__navmenu--option {
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	display: inline-block;
+	border: none;
+	background-color: white;
+}
+.header__navmenu--option:hover {
+	color: white;
+	background-color: black;
+}
+.row .header__product{
+	margin-bottom: 20px;
+	padding: 0px;
+	margin-top: 75px;
+	height: 680px;
+}
+.dropdown {
+	display: inline-block;
+}
+.dropdown__list {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	min-width: 150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	transition: 0.5s dropdown__list ease;
+	margin-top: 1px;
+}
+.dropdown__list a {
+	color: black;
+	padding: 10px 16px;
+	text-decoration: none;
+	display: block;
+	background-color: white;
+}
+.dropdown__list a:hover {
+	color: white;
+	background-color: black;
+}
+.dropdown:hover .dropdown__list {
+	display: block;
+}
+.logo--image img {
+	height:  50px;
+	display: inline-block;
+}
+hr{
+	margin-top: 0px;
+}
+.svg-inline--fa{
+	color: black;
+	height: 20px;
+	padding-top: 15px;
+}
+/* css header end */
+/* css body */
+.logo-brand {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.logo-brand img{
+	height: 400px;
+}
+
+.angle-down .svg-inline--fa{
+    float: right;
+}
+#sortby{
+	width: 200px;
+}
+#list1, #list2,#list3{
+    display: none;
+    position: relative;
+}
+.option{
+    border-bottom: 2px solid;
+    border-color: black;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+#list1 li{
+    list-style: none;
+    padding-top: 5px;
+}
+#list2 li{
+    list-style: none;
+    padding-top: 5px;
+}
+#list3 li{
+    list-style: none;
+    padding-top: 5px;
+}
+
+
+
+.body .col .card .card-body .card-title{
+	max-height: 72px;
+}
+
+.ad{
+    border: 1px solid;
+    height: 100%;
+    text-align: center;
+}
+.col button{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.col button:hover{
+    background-color: white;
+    color: black;
+}
+.pagination a{
+    color: black;
+}
+.filter-menu{
+    height: 100%;
+}
+/* css body end */
+/* css footer */
+.footer__contact ul li a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+.footer__infor ul li a{
+	text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.footer__infor p{
+    margin-left: 32px;
+}
+.footer__contact p{
+	margin-left: 32px;
+}
+.footer__contact a,.footer__store a{
+	color:rgb(247, 180, 36);
+}
+.footer{
+	color: white;
+	background-color: #323232;
+	margin-top:30px;
+	width: 100%;
+}
+.contactus strong{
+	margin-left: 30px;
+}
+.store strong{
+	margin-left: 30px;
+}
+.footer__infor, .footer__contact, .footer__store, .contactus{
+	margin-top: 20px;
+}
+.footer .col-md-4.col-lg-4.col-sm-4{
+	padding: 0px;
+}
+/* css footer end */

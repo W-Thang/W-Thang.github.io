@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bag Bag Offical</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.buoi1/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../font/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../style/project-product-list.css">
+    <script src="https://kit.fontawesome.com/38fa89d31e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../style/select2.css">
+    <!-- <script src="js/select2.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <script src="../js/jquery-1.8.0.min.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container-fluid col-md-12 col-lg-12 col-sm-12">
+        <!-- header -->
+		<div class="top-body">
+			<div class="row" style="height: 76px;">
+				<div class="col-md-12 col-lg-12 col-sm-12">
+					<div class="header fixed-top">
+                        <!-- header include menu and option -->
+						<div class="row" style="height: 50px;">
+							<span class="col-md-1 col-lg-1 col-sm-1" style="padding: 0%; width: 10%;">
+								<input type="checkbox" id="show-search" style="display: none;">
+								<form class="search-box" action="project-product-list.html">
+								<input type="text" placeholder="What are you looking for....">
+								<button type="submit" class="go-icon"><i class="fa-solid fa-arrow-right-long"></i></button>
+								</form>
+							</span>
+							<span class="col-md-10 col-lg-10 col-sm-10" style="padding: 0%;width: 80%;">
+								<div class="logo">
+									<div class="logo--image">
+										<a href="../index.html"><img src="../image/logo/logo.png"></a>
+									</div>
+								</div>
+							</span>
+							<span class="col-md-1 col-lg-1 col-sm-1" style="padding: 0%; width: 10%; line-height: 50px; height: 50px;">
+								<span class="header__option">
+									<span class="header__search">
+										<label for="show-search"  class="header__search--icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+									</span>
+									<span class="header__user">
+										<button class="header__user--icon"><a href="../project-account.html"><i class="fa-solid fa-user"></i></a></button>
+									</span>
+									<span class="header__cart">
+										<button class="header__cart--icon"><a href="../cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+									</span>
+								</span>
+							</span>
+						</div>
+                        <!-- end header include menu and option -->
+                        <!-- header navbar menu -->
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-sm-12">
+								<div class="header__navmenu">
+									<nav class="header__navmenu--list">
+                                        <a href="../index.html" class="header__navmenu--option"><strong>NEW ARRIVAL</strong></a>
+                                        <div class="dropdown">
+                                            <button class="header__navmenu--option"><strong>BRANDS</strong></button>
+                                            <div class="dropdown__list">
+                                                <a href="chloe-list.html"><strong>CHLOÉ</strong></a>
+                                                <a href="coach-list.html"><strong>COACH</strong></a>
+                                                <a href="dior-list.html"><strong>DIOR</strong></a>
+                                                <a href="louis_vuitton-list.html"><strong>LOUIS VUITTON</strong></a>
+                                                <a href="#"><strong>DISCOVER MORE...</strong></a>
+                                            </div>
+                                        </div>
+										<a href="man.html" class="header__navmenu--option"><strong>MAN</strong></a>
+										<a href="woman.html" class="header__navmenu--option"><strong>WOMAN</strong></a>
+									</nav>
+								</div>
+							</div>
+						</div>
+                        <!-- end header navbar menu -->
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- end header -->
+        <!-- body: include product list option, list of stuff and Advertise -->
+        <div class="body">
+            <div class="row">
+                <div class="logo-brand">
+                    <img src="../image/logo/cross-logo.png">
+                </div>
+            </div>
+            <div class="row">
+                <!-- list option -->
+                <div class="col-md-2 col-lg-2 col-sm-2">
+                    <div class="filter-menu">
+                        <div class="product__list">
+                            <div class="option">FILTER</div>
+                            <div class="option">
+                                <div id="open-list1">GENDER<span class="angle-down"><i class="fa-solid fa-chevron-down"></i></span></div> 
+                            </div>
+                            <div id="list1">
+                                <li><span class="checkbox"><input type="checkbox" value="1" class="list1"></span> All</li>
+                                <li><span class="checkbox"><input type="checkbox" value="1" class="list1"></span> Men</li>
+                                <li><span class="checkbox"><input type="checkbox" value="1" class="list1"></span> Women</li>
+                            </div>
+                            <div  class="option">
+                                <div id="open-list2">BRANDS<span class="angle-down"><i class="fa-solid fa-chevron-down"></i></span></div>
+                            </div>
+                            <div id="list2">
+                                <li><span class="checkbox"><input type="checkbox"></span> Chloé</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Coach</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Dior</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Louis Vuitton</li>
+                            </div>
+                            <div class="option">
+                                <div id="open-list3">CATEGORY<span class="angle-down"><i class="fa-solid fa-chevron-down"></i></span></div> 
+                            </div>
+                            <div id="list3">
+                                <li><span class="checkbox"><input type="checkbox"></span> Backpacks</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Cross-body Bags</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Sling Bags</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Tote Bags</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of list option -->
+                <!-- the main body: include list of stuff and how many silde that we got -->
+                <div class="col-md-8 col-lg-8 col-sm-8">
+                    <!-- sort by list -->
+                    <div class="row" style="margin-bottom: 30px;">
+                        <select name="" id="sortby">
+                        <span class="sort--list">
+                            <optgroup id="sort">
+                                <option value="default">Sort by--</option>
+                                <option value="Name: A-Z">Name: A-Z</option>
+                                <option value="Name: Z-A">Name: Z-A</option>
+                                <option value="Price: high to low">Price: high to low</option>
+                                <option value="Price: low to high">Price: low to high</option>
+                            </optgroup>
+                        </span>
+                    </select>
+                    </div>
+                    <!-- end of sort by list -->
+                     <!-- list of stuff -->
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/chloe/bp-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sheltersuit & Chloé</h5>
+                                    <p class="card-text">US $867</p>
+                                    <a href="../product_html/chloe/bp1.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/chloe/bp-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">JOY RIDER</h5>
+                                    <p class="card-text">US $389</p>
+                                    <a href="../product_html/chloe/bp2.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/chloe/cross-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MARA CROSS-BODY</h5>
+                                    <p class="card-text">US $531</p>
+                                    <a href="../product_html/chloe/cross1.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/chloe/cross-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">KATTIE</h5>
+                                    <p class="card-text">US $2045</p>
+                                    <a href="../product_html/chloe/cross2.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/chloe/tote-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MEDIUM WOODY</h5>
+                                    <p class="card-text">US $984</p>
+                                    <a href="../product_html/chloe/tote1.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/chloe/tote-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MARCIE HANDBAG</h5>
+                                    <p class="card-text">US $2251</p>
+                                    <a href="../product_html/chloe/tote2.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of list of stuff -->
+                    <!-- this part show there are how many slide that we had -->
+                    <div class="row mt-5">
+                        <nav aria-label="...">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <span class="page-link">Previous</span>
+                                </li>
+                                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end of the main body -->
+                <!-- The Advertise -->
+                <div class="col-md-2 col-lg-2 col-sm-2">
+                    <div class="ad">Advertise Here</div>
+                </div>
+                <!-- end of the Advertise -->
+            </div>
+        </div>
+        <!-- end of body -->
+        <!-- footer -->
+        <div class="row">
+            <div class="footer rounded">
+                <div class="row">
+                    <!-- infor -->
+                    <div class="col-md-4 col-lg-4 col-sm-4">
+                        <div class="footer__infor">
+                            <p><strong>INFORMATIONS</strong></p>
+                            <ul>
+                                <li>
+                                    <a href="">About us</a>
+                                </li>
+                                <li>
+                                    <a href="">Recruitment</a>
+                                </li>
+                                <li>
+                                    <a href="">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="">Stores</a>
+                                </li>
+                                <li>
+                                    <a href="">Payment</a>
+                                </li>
+                                <li>
+                                    <a href="">Return policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Warranty policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Terms of service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end of infor -->
+                    <!-- store -->
+                    <div class="col-md-4 col-lg-4 col-sm-4">
+                        <div class="footer__store">
+                            <p class="store"><strong>STORES</strong></p>
+                            <ul>
+                                <li>
+                                    <p><strong>Store 1</strong><br>
+                                        <a href="">284 Pasteur, Quận 3, HCM</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Store 2</strong><br>
+                                        <a href="">244 Trần Hưng Đạo, Quận 1, HCM</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Store 3</strong><br>
+                                        <a href="">513 Âu Cơ, Quận Tân Phú, HCM</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Store 4</strong><br>
+                                        <a href="">8 Trần Quốc Toản, Hoàn Kiếm, Hà Nội </a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Store 5</strong><br>
+                                        <a href="">198 Tôn Đức Thắng, Đống Đa, Hà Nội</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="contactus"><strong>Openning time: 08:00 - 21:00</strong></p>
+                        </div>
+                    </div>
+                    <!-- end of store -->
+                    <!-- contact -->
+                    <div class="col-md-4 col-lg-4 col-sm-4">
+                        <div class="footer__contact">
+                            <p><strong>CONTACT US</strong></p>
+                            <p>Hotline:</p>
+                            <p>Email: <a href="">contact@aptech.com</a></p>
+                        </div>
+                    </div>
+                    <!-- end of contact -->
+                </div>
+            </div>
+        </div>
+        <!-- end of footer -->
+	</div>
+<script type="text/javascript" src="../bootstrap.buoi1/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../font/js/all.js"></script>
+<link rel="stylesheet" type="text/css" href="../js/jquery-3.6.0.min.js">
+
+<script>
+$(document).ready(function(){
+$("#open-list1").click(function(){
+  $("#list1").slideToggle();
+});
+});
+$(document).ready(function(){
+$("#open-list2").click(function(){
+  $("#list2").slideToggle();
+});
+});
+$(document).ready(function(){
+$("#open-list3").click(function(){
+  $("#list3").slideToggle();
+});
+});
+</script>
+<script>
+    $('.list1').on('change',function(){
+        $('.list1').not(this).prop('checked',false);
+    });
+</script>
+<!-- <script>
+    $(document).ready(function() { 
+        $("#sortby").select2({
+                placeholder: "Sort by--",
+                allowClear: true
+         }); 
+    });
+</script> -->
+</body>
+</html>
