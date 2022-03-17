@@ -220,6 +220,12 @@ hr{
 	max-height: 72px;
 }
 
+.col .card .card-body{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
 .ad{
     border: 1px solid;
     height: 100%;
