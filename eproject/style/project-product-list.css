@@ -225,7 +225,9 @@ hr{
 	padding-right: 0px;
 }
 
-
+.col .card .card-body h5{ 
+	text-transform: uppercase;
+}
 .ad{
     border: 1px solid;
     height: 100%;
