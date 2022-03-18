@@ -15,6 +15,7 @@
 <body>
 	<div class="container-fluid col-md-12 col-lg-12 col-sm-12">
         <!-- header -->
+		<div class="top-body">
 			<div class="row" style="height: 76px;">
 				<div class="col-md-12 col-lg-12 col-sm-12">
 					<div class="header fixed-top">
@@ -22,9 +23,9 @@
 						<div class="row" style="height: 50px;">
 							<span class="col-md-1 col-lg-1 col-sm-1" style="padding: 0%; width: 10%;">
 								<input type="checkbox" id="show-search" style="display: none;">
-								<form class="search-box" action="project-product-list.html">
+								<form class="search-box" action="list-product-all.html">
 								<input type="text" placeholder="What are you looking for....">
-								<button type="submit" class="go-icon"><i class="fa-solid fa-arrow-right-long"></i></button>
+								<button type="submit" class="go-icon"><a href="list-product-all.html"><i class="fa-solid fa-arrow-right-long"></i></a></button>
 								</form>
 							</span>
 							<span class="col-md-10 col-lg-10 col-sm-10" style="padding: 0%;width: 80%;">
@@ -75,157 +76,206 @@
 					</div>
 				</div>
 			</div>
+		</div>
         <!-- end header -->
         <!-- body: include product list option, list of stuff and Advertise -->
-        <div class="row">
-            <div class="body">
-                <div class="row">
-                    <div class="logo-brand">
-                        <img src="../image/logo/man-logo.jpg">
+        <div class="body">
+            <div class="row">
+                <div class="logo-brand">
+                    <img src="../image/logo/man-logo.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <!-- list option -->
+                <div class="col-md-2 col-lg-2 col-sm-2">
+                    <div class="filter-menu">
+                        <div class="product__list">
+                            <div class="option">FILTER</div>
+                            <div class="option">
+                                <div id="open-list1">GENDER<span class="angle-down"><i class="fa-solid fa-chevron-down"></i></span></div> 
+                            </div>
+                            <div id="list1">
+                                <li><span class="checkbox"><input type="checkbox" value="1" class="list1"></span> All</li>
+                                <li><span class="checkbox"><input type="checkbox" value="1" class="list1"></span> Men</li>
+                                <li><span class="checkbox"><input type="checkbox" value="1" class="list1"></span> Women</li>
+                            </div>
+                            <div  class="option">
+                                <div id="open-list2">BRANDS<span class="angle-down"><i class="fa-solid fa-chevron-down"></i></span></div>
+                            </div>
+                            <div id="list2">
+                                <li><span class="checkbox"><input type="checkbox"></span> Chloé</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Coach</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Dior</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Luis Vuitton</li>
+                            </div>
+                            <div class="option">
+                                <div id="open-list3">CATEGORY<span class="angle-down"><i class="fa-solid fa-chevron-down"></i></span></div> 
+                            </div>
+                            <div id="list3">
+                                <li><span class="checkbox"><input type="checkbox"></span> Backpacks</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Cross-body Bags</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Sling Bags</li>
+                                <li><span class="checkbox"><input type="checkbox"></span> Tote Bags</li>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <!-- list option -->
-                    <div class="col-md-2 col-lg-2 col-sm-2">
-                        <div class="filter-menu">
-                            <div class="product__list">
-                                <div class="option">FILTER</div>
-                                <div class="option">
-                                    <div id="open-list1">GENDER<span class="angle-down"><i class="fa-solid fa-chevron-down"></i></span></div> 
+                <!-- end of list option -->
+                <!-- the main body: include list of stuff and how many silde that we got -->
+                <div class="col-md-8 col-lg-8 col-sm-8">
+                    <!-- sort by list -->
+                    <div class="row" style="margin-bottom: 30px;">
+                        <select name="" id="sortby">
+                        <span class="sort--list">
+                            <optgroup id="sort">
+                                <option value="default">Sort by--</option>
+                                <option value="Name: A-Z">Name: A-Z</option>
+                                <option value="Name: Z-A">Name: Z-A</option>
+                                <option value="Price: high to low">Price: high to low</option>
+                                <option value="Price: low to high">Price: low to high</option>
+                            </optgroup>
+                        </span>
+                    </select>
+                    </div>
+                    <!-- end of sort by list -->
+                     <!-- list of stuff -->
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/coach/bp-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Itch Backpack</h5>
+                                    <p class="card-text">US $1295</p>
+                                    <a href="../product_html/coach/bp2.html"><button type="button">Show</button></a>
                                 </div>
-                                <div id="list1">
-                                    <li><span class="checkbox"><input type="checkbox" value="1" class="list1"></span> All</li>
-                                    <li><span class="checkbox"><input type="checkbox" value="1" class="list1" checked></span> Men</li>
-                                    <li><span class="checkbox"><input type="checkbox" value="1" class="list1"></span> Women</li>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/coach/bp-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Charter Backpack</h5>
+                                    <p class="card-text">US $950</p>
+                                    <a href="../product_html/coach/bp1.html"><button type="button">Show</button></a>
                                 </div>
-                                <div  class="option">
-                                    <div id="open-list2">BRANDS<span class="angle-down"><i class="fa-solid fa-chevron-down"></i></span></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/coach/sling-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Charter Mini</h5>
+                                    <p class="card-text">US $275</p>
+                                    <a href="../product_html/coach/sling1.html"><button type="button">Show</button></a>
                                 </div>
-                                <div id="list2">
-                                    <li><span class="checkbox"><input type="checkbox"></span> Chloé</li>
-                                    <li><span class="checkbox"><input type="checkbox"></span> Coach</li>
-                                    <li><span class="checkbox"><input type="checkbox"></span> Dior</li>
-                                    <li><span class="checkbox"><input type="checkbox"></span> Luis Vuitton</li>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/coach/sling-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Charter Mini</h5>
+                                    <p class="card-text">US $275</p>
+                                    <a href="../product_html/coach/sling2.html"><button type="button">Show</button></a>
                                 </div>
-                                <div class="option">
-                                    <div id="open-list3">CATEGORY<span class="angle-down"><i class="fa-solid fa-chevron-down"></i></span></div> 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/coach/tote-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Field Tote 40</h5>
+                                    <p class="card-text">US $697</p>
+                                    <a href="../product_html/coach/tote1.html"><button type="button">Show</button></a>
                                 </div>
-                                <div id="list3">
-                                    <li><span class="checkbox"><input type="checkbox"></span> Backpacks</li>
-                                    <li><span class="checkbox"><input type="checkbox"></span> Cross-body Bags</li>
-                                    <li><span class="checkbox"><input type="checkbox"></span> Sling Bags</li>
-                                    <li><span class="checkbox"><input type="checkbox"></span> Tote Bags</li>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/coach/tote-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Field Tote 40</h5>
+                                    <p class="card-text">US $1100</p>
+                                    <a href="../product_html/coach/tote2.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/louis_vuitton/bp-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Backpack Multipocket</h5>
+                                    <p class="card-text">US $3600</p>
+                                    <a href="../product_html/louis_vuitton/bp1.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/louis_vuitton/bp-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avenue Sling Bag</h5>
+                                    <p class="card-text">US $2640</p>
+                                    <a href="../product_html/louis_vuitton/bp2.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/louis_vuitton/tote-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weekend Tote GM</h5>
+                                    <p class="card-text">US $2980</p>
+                                    <a href="../product_html/louis_vuitton/tote1.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/louis_vuitton//sling-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dean Backpack</h5>
+                                    <p class="card-text">US $1900</p>
+                                    <a href="../product_html/louis_vuitton/sling1.html"><button type="button">Show</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img src="../image/img-products/louis_vuitton/cross-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Duo Messenger</h5>
+                                    <p class="card-text">US $2640</p>
+                                    <a href="../product_html/louis_vuitton/cross2.html"><button type="button">Show</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- end of list option -->
-                    <!-- the main body: include list of stuff and how many silde that we got -->
-                    <div class="col-md-8 col-lg-8 col-sm-8">
-                        <!-- sort by list -->
-                        <div class="row" style="margin-bottom: 30px;">
-                            <select name="" id="sortby">
-                            <span class="sort--list">
-                                <optgroup id="sort">
-                                    <option value="default">Sort by--</option>
-                                    <option value="Name: A-Z">Name: A-Z</option>
-                                    <option value="Name: Z-A">Name: Z-A</option>
-                                    <option value="Price: high to low">Price: high to low</option>
-                                    <option value="Price: low to high">Price: low to high</option>
-                                </optgroup>
-                            </span>
-                        </select>
-                        </div>
-                        <!-- end of sort by list -->
-                        <!-- list of stuff -->
-                        <div class="row row-cols-1 row-cols-md-4 g-4">
-                            <div class="col">
-                                <div class="card text-center">
-                                    <img src="../image/img-products/coach/bp-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">CHARTER BACKPACK</h5>
-                                        <p class="card-text">US $950</p>
-                                        <a href="../product_html/coach/bp1.html"><button type="button">Show</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card text-center">
-                                    <img src="../image/img-products/coach/bp-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">ITCH BACKPACK</h5>
-                                        <p class="card-text">US $1295</p>
-                                        <a href="../product_html/coach/bp2.html"><button type="button">Show</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card text-center">
-                                    <img src="../image/img-products/chloe/cross-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">MARA CROSS-BODY</h5>
-                                        <p class="card-text">US $531</p>
-                                        <a href="../product_html/chloe/cross1.html"><button type="button">Show</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card text-center">
-                                    <img src="../image/img-products/chloe/cross-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">KATTIE</h5>
-                                        <p class="card-text">US $2045</p>
-                                        <a href="../product_html/chloe/cross2.html"><button type="button">Show</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card text-center">
-                                    <img src="../image/img-products/chloe/tote-1.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">MEDIUM WOODY</h5>
-                                        <p class="card-text">US $984</p>
-                                        <a href="../product_html/chloe/tote1.html"><button type="button">Show</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card text-center">
-                                    <img src="../image/img-products/chloe/tote-2.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">MARCIE HANDBAG</h5>
-                                        <p class="card-text">US $2251</p>
-                                        <a href="../product_html/chloe/tote2.html"><button type="button">Show</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end of list of stuff -->
-                        <!-- this part show there are how many slide that we had -->
-                        <div class="row mt-5">
-                            <nav aria-label="...">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item disabled">
-                                        <span class="page-link">Previous</span>
-                                    </li>
-                                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- end -->
+                    <!-- end of list of stuff -->
+                    <!-- this part show there are how many slide that we had -->
+                    <div class="row mt-5">
+                        <nav aria-label="...">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <span class="page-link">Previous</span>
+                                </li>
+                                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <!-- end of the main body -->
-                    <!-- The Advertise -->
-                    <div class="col-md-2 col-lg-2 col-sm-2">
-                        <div class="ad">Advertise Here</div>
-                    </div>
-                    <!-- end of the Advertise -->
+                    <!-- end -->
                 </div>
+                <!-- end of the main body -->
+                <!-- The Advertise -->
+                <div class="col-md-2 col-lg-2 col-sm-2">
+                    <div class="ad">Advertise Here</div>
+                </div>
+                <!-- end of the Advertise -->
             </div>
         </div>
         <!-- end of body -->

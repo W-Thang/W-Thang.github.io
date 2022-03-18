@@ -43,6 +43,7 @@
 	transition: all 0.3s ease;
 }
 .search-box input{
+	padding-left: 1%;
 	width: 95%;
 	border: none;
 }
@@ -129,8 +130,6 @@
 .row .header__product{
 	margin-bottom: 20px;
 	padding: 0px;
-	margin-top: 75px;
-	height: 680px;
 }
 .dropdown {
 	display: inline-block;
@@ -308,10 +307,9 @@ hr{
 }
 
 
-.comment__fb {/*
-    width: 100%;
-*/    display: inline-block;
-margin-top: 20px;
+.comment__fb {
+    display: inline-block;
+	margin-top: 20px;
 }
 
 .comment__fb .comment__title {
@@ -338,6 +336,7 @@ margin-top: 20px;
 }
 
 .comment__fb .feedback button {
+	margin-left: 20px;
 	margin-bottom: 50px;
 }
 

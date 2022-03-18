@@ -7,7 +7,7 @@
 /* css header */
 .header{
 	background-color: white;
-	width: 100%;
+	width: auto;
 	position: fixed;
 }
 .logo--image{
@@ -42,6 +42,7 @@
 	transition: all 0.3s ease;
 }
 .search-box input{
+	padding-left: 1%;
 	width: 95%;
 	border: none;
 }
@@ -128,8 +129,6 @@
 .row .header__product{
 	margin-bottom: 20px;
 	padding: 0px;
-	margin-top: 75px;
-	height: 680px;
 }
 .dropdown {
 	display: inline-block;
@@ -175,11 +174,11 @@ hr{
 .logo-brand {
 	display: flex;
 	justify-content: center;
-	margin: 3% 0;
+	margin-bottom: 20px;
 }
 
 .logo-brand img{
-	width: 50%;
+	height: 400px;
 }
 
 .angle-down .svg-inline--fa{
@@ -213,19 +212,18 @@ hr{
 }
 
 .col .card img{
-	height: 200px;
-}
-.col .card .card-body{
-	padding-left: 0px;
-	padding-right: 0px;
+	height: 250px;
 }
 
 .body .col .card .card-body .card-title{
 	max-height: 72px;
 }
-.col .card{
-	height: 100%;
+
+.col .card .card-body{
+	padding-left: 0px;
+	padding-right: 0px;
 }
+
 .ad{
     border: 1px solid;
     height: 100%;
